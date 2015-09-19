@@ -1,25 +1,32 @@
 Package.describe({
   summary: "Nicely formatted dropdown list of timezones, based on moment. Also timezone detection.",
-  version: '0.1.2',
-  name: "joshowens:timezone-picker",
-  git: 'https://github.com/MeteorClub/timezone-picker'
+  version: '0.1.3',
+  name: "pfafman:timezone-picker",
+  git: 'https://github.com/pfafman/timezone-picker'
 });
 
 Package.onUse(function(api, where) {
-  api.versionsFrom("METEOR@0.9.4");
+  api.versionsFrom("METEOR@1.0");
 
-  api.use(['blaze', 'templating', 'jquery'], 'client');
-  api.use(['underscore'], 'client');
-  api.use(['mrt:moment@2.8.1', 'mrt:moment-timezone@0.2.1'], 'client');
+  api.use([
+    'blaze', 
+    'templating', 
+    'jquery', 
+    'underscore', 
+    'coffeescript',
+    'momentjs:moment@2.10.6', 
+    'pfafman:moment-timezone@0.4.0'
+  ], 'client');
+  
 
   api.addFiles([
-    'mapping.js',
+    'mapping.coffee',
     'picker.html',
-    'picker.js',
+    'picker.coffee',
     'jstz.js'
   ], 'client');
 
-  api.export(['TimezonePicker']);
+  api.export('TimezonePicker');
 });
 
 

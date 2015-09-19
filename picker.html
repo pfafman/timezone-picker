@@ -1,10 +1,10 @@
 <template name="timezonePicker">
-  <select class="{{class}}" name="pickedTimezone">
+  <select name="timezone" id="timezone">
     {{#each timezones}}
       {{#if name}}
-      <option value="{{timezone}}" {{selected}}>(GMT {{gmtOffset}}) {{name}} </option>
+        <option value="{{timezone}}" {{selected}}>(GMT {{gmtOffset}}) {{name}} </option>
       {{else}}
-      <option value="{{timezone}}" {{selected}}></option>
+        <option value="{{timezone}}" {{selected}}></option>
       {{/if}}
     {{/each}}
   </select>
