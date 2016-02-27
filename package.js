@@ -1,6 +1,6 @@
 Package.describe({
   summary: "Nicely formatted dropdown list of timezones, based on moment. Also timezone detection.",
-  version: '0.1.3',
+  version: '0.1.4',
   name: "pfafman:timezone-picker",
   git: 'https://github.com/pfafman/timezone-picker'
 });
@@ -14,8 +14,8 @@ Package.onUse(function(api, where) {
     'jquery', 
     'underscore', 
     'coffeescript',
-    'momentjs:moment@2.10.6', 
-    'pfafman:moment-timezone@0.4.0'
+    'momentjs:moment@2.11.2', 
+    'risul:moment-timezone@0.5.0'
   ], 'client');
   
 
