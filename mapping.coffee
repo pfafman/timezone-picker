@@ -1,4 +1,13 @@
 
+
+{ checkNpmVersions } = require 'meteor/tmeasday:check-npm-versions'
+
+checkNpmVersions
+  'moment-timezone': '^0.5.3'
+, 'pfafman:timezone-picker'
+
+moment = require('moment-timezone')
+
 TimezonePicker =
 
   detectedZone: ->
