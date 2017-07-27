@@ -4,9 +4,12 @@
 
 checkNpmVersions
   'moment-timezone': '^0.5.3'
+  'jstz': '^1.0.9'
 , 'pfafman:timezone-picker'
 
 moment = require('moment-timezone')
+
+import jstz from 'jstz'
 
 TimezonePicker =
 
