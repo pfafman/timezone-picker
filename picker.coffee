@@ -1,6 +1,6 @@
 
 Template.timezonePicker.onRendered ->
-  @$('select').material_select()
+  @$('select').formSelect()
 
 
 Template.timezonePicker.helpers
