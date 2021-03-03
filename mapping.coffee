@@ -7,7 +7,9 @@ checkNpmVersions
   'jstz': '^1.0.9'
 , 'pfafman:timezone-picker'
 
-moment = require('moment-timezone')
+
+@moment = require('moment-timezone')
+#console.log("timezone-picker: loaded moment-timezone (#{moment.version})")
 
 import jstz from 'jstz'
 
